@@ -49,6 +49,11 @@ hr {
 .profile h4 {
   line-height: 25px;
   font-size: 21px;
+  color: #555;
+  margin: 0px 10px 0px 10px;
+}
+ul {
+  margin-right: 10px;
 }
 .column {
   margin-left: 20px;
@@ -90,8 +95,11 @@ $.extend(true, $.magnificPopup.defaults, {
         patterns: {
            youtube: {
               index: 'youtube.com/', 
-              id: 'v=', 
-              src: 'https://www.youtube.com/embed/%id%?autoplay=1' 
+              id: function (url) {
+                var [url, t] = url.split('&t=');
+                return url.split('?v=')[1] + '?autoplay=1' + (t !== undefined ? '&start='+t : '')
+              },
+              src: 'https://www.youtube.com/embed/%id%' 
           },
           vimeo: {
               index: 'vimeo.com/', 
@@ -185,7 +193,7 @@ l= [ mkProfile('kiraly', 'Jozef Király', 'obvinený z úkladnej vraždy',
       ])
     ])
 
-  , mkProfile('martinak', 'Róbert Martinák', '<big>11&times;</big> odsúdený',
+  , mkProfile('martinak', 'Róbert Martinák', '<big>11&times;</big> odsúdený kontrolór RSC',
     [ mkUL(
       [ '3x odsúdený za krádež a výtržníctvo, (tresty boli v 2012 zahladené)'
       , '6x uznaný vinným z priestupku proti majetku a 2x proti občianskemu spolunažívaniu  [https://bit.ly/2DJ8xBB] [https://bit.ly/2DRms8J]'
@@ -197,38 +205,20 @@ l= [ mkProfile('kiraly', 'Jozef Király', 'obvinený z úkladnej vraždy',
       
   , mkProfile('medvecky', 'Andrej Medvecký', 'obžalovaný z ublíženia na zdraví, v&nbsp;podmienke za jazdu pod vplyvom alkoholu',
     [ mkUL(
-      [ 'obžalovaný za napadnutie Dominikánca Leniho Cruza (2014); podľa svedkov na ňom sedel, boxoval mu do tváre a kričal "Zabite toho negra, nemá tu čo robiť, toto je tvoj koniec!" (https://bit.ly/2si3Ig6) (https://bit.ly/2RRE3Gb)'
-      , 'vyšetrovaný tiež kvôli napadnutiu muža z Trstenej (2015); niekoľkokrát ho udrel päsťou do tváre a zlomil mu nos, muž bol PN 10 dní (https://bit.ly/36nRSju)'
+      [ 'obžalovaný za napadnutie Dominikánca Leniho Cruza (2014); podľa svedkov na ňom sedel, boxoval mu do tváre a kričal "Zabite toho negra, nemá tu čo robiť, toto je tvoj koniec!" [https://bit.ly/2si3Ig6] [https://bit.ly/2RRE3Gb]'
+      , 'vyšetrovaný tiež kvôli napadnutiu muža z Trstenej (2015); niekoľkokrát ho udrel päsťou do tváre a zlomil mu nos, muž bol PN 10 dní [https://bit.ly/36nRSju]'
       , 'predseda severoslovenského krajského klubu'
       , 'zvolený do parlamentu; vzdal sa mandátu, namiesto neho nastúpil Mazurek'
       ])
     , mkGal(['img/med1.png', 'img/med2.jpg', 'img/med3.jpg'])
     ])
 
-  , mkProfile('bahno', 'Peter Bahno', 'odsúdený za násilné trestné činy (3 roky s podm. odkladom na 5 rokov)',
+  , mkProfile('bahno', 'Peter Bahno', 'odsúdený za násilné trestné činy (3&nbsp;roky s podm. odkladom na 5&nbsp;rokov)',
     [ mkUL(
-      [ 'vinný z prečinu ublíženia na zdraví, pokusu zločinu ublíženia na zdraví, prečinu výtržníctva a zo zločinu obmedzovania osobnej slobody vo forme spolupáchateľstva (2013) (https://bit.ly/2RI2uWs)'
+      [ 'vinný z prečinu ublíženia na zdraví, pokusu zločinu ublíženia na zdraví, prečinu výtržníctva a zo zločinu obmedzovania osobnej slobody vo forme spolupáchateľstva (2013) [https://bit.ly/2RI2uWs]'
       , 'asistent poslanca Stanislava Drobného'
       ])
     , mkGal(['img/bah1.jpg', 'img/bah2.jpg'])
-    ])
-   
-  , mkProfile('mazurek', 'Milan Mazurek', 'vinný z úmyselného prečinu hanobenia národa, rasy či presvedčenia',
-    [ mkUL(
-      [ 'pokutu 10,000eur za jeho výroky v rádiu Frontinus zaplatil; na súde sa obhajoval, že videozáznam je vraj "sfalšovaný"'
-      , 'v skupine, ktorá hádzala kamene na ženy a deti [https://www.youtube.com/watch?v=5JAqE4feToQ] [https://bit.ly/380xJBL] [https://bit.ly/2tdHfkU]'
-      , 'do parlamentu sa dostal ako náhradník za Medveckého'
-      , 'predseda východoslovenského krajského klubu'
-      ])
-    , mkGal([['https://www.youtube.com/watch?v=8eAQp6D0onk', 'img/maz1.png'], 'img/maz3.jpg', 'img/maz2.jpg', 'img/maz4.jpg', 'img/maz5.jpg', 'img/maz6.png']) // https://www.youtube.com/watch?v=5JAqE4feToQ https://www.youtube.com/watch?v=sM-EY5u3XFM 
-    ])  
-   
-  , mkProfile('mizik', 'Stanislav Mizík', '"nevie používať počítač"',
-    [ mkUL(
-      [ 'obžalovaný z prečinu výroby extrémistických materiálov v jednočinnom súbehu s prečinom hanobenie národy, rasy a presvedčenia'
-      , 'obhajoba: "Nevie používať počítač"'
-      , 'oblastný predseda pre okresy Revúca, Rožňava'
-      ])
     ])
    
   , mkProfile('magat', 'Marián Magát', 'odsúdený za nedovolené ozbrojovanie (3&nbsp;roky podm.)',
@@ -243,16 +233,27 @@ l= [ mkProfile('kiraly', 'Jozef Király', 'obvinený z úkladnej vraždy',
   , mkProfile('rogel', 'Rastislav Rogel', 'odsúdený za ublíženie na zdraví; vytetovaný hákový kríž',
     [ mkUL(
       [ 'vyviazol so 14 mesiacmi podmienky za výtržníctvo'
-      , 'na ruke má vytetovaný hákový kríž'
+      , 'na ruke mal vytetovaný hákový kríž'
       , 'bývalý líder skupín Krátky proces a Juden Mord ("Vraždenie Židov")'
       , 'v 2016 kandidoval za ĽSNS z 44. miesta'
       ])
     , mkGal(['img/rog1.png', 'img/rog2.jpg', 'img/rog3.jpg', 'img/rog4.png'])
     ])
    
+  , mkProfile('mazurek', 'Milan Mazurek', 'vinný z úmyselného prečinu hanobenia národa, rasy či presvedčenia',
+    [ mkUL(
+      [ 'pokutu 10,000eur za jeho výroky v rádiu Frontinus zaplatil; na súde sa obhajoval, že videozáznam je vraj "sfalšovaný"'
+      , 'v skupine, ktorá hádzala kamene na ženy a deti [https://www.youtube.com/watch?v=5JAqE4feToQ] [https://bit.ly/380xJBL] [https://bit.ly/2tdHfkU]'
+      , 'do parlamentu sa dostal ako náhradník za Medveckého'
+      , 'predseda východoslovenského krajského klubu'
+      ])
+    , mkGal([['https://www.youtube.com/watch?v=8eAQp6D0onk&t=815', 'img/maz1.png'], 'img/maz3.jpg', 'img/maz2.jpg', 'img/maz4.jpg', 'img/maz5.jpg', 'img/maz6.png']) // https://www.youtube.com/watch?v=5JAqE4feToQ https://www.youtube.com/watch?v=sM-EY5u3XFM 
+    ])  
+   
   , mkProfile('jakubik', 'Rastislav Jakubík', 'vytetovaný hákový kríž',
   [ mkUL(
     [ 'maličký hákový kríž je uprostred veľkého Železného kríža'
+    , 'Kotleba to opakovane popiera napriek fotografiám a napriek tomu, že to sám Jakubík priznal'
     , 'predseda západoslovenského krajského klubu'
     ])
   , mkGal(['img/jak3.png', 'img/jak0.png', 'img/jak2.jpg', ['https://www.youtube.com/watch?v=TiXCe_k-F9g', 'img/jak4.png'], ['https://www.youtube.com/watch?v=r-R7qWrMHvg', 'img/jak5.png']])
@@ -262,7 +263,7 @@ l= [ mkProfile('kiraly', 'Jozef Király', 'obvinený z úkladnej vraždy',
     [ mkUL(
       [ 'podľa rozsudku Okresného súdu môžeme Ďuricu nazývať neonacistom - môže si za to sám textami, ktoré spieva [https://bit.ly/2qhjFma] [https://bit.ly/365p8M2]'
       , 'frontman neonacistickej kapely Biely Odpor'
-      , 'nahrávka, ako hajluje na koncerte (Biely Odpor Live) [https://vimeo.com/377172660]'
+      , 'priložená nahrávka, ako hajluje na koncerte (Biely Odpor Live) [https://vimeo.com/377172660]'
       , 'hovorca ĽSNS, asistent poslanca Schlossára'
       ])
     , mkGal([['https://www.youtube.com/watch?v=ClUOLEO--Fk', 'img/jak5.png'], ['https://www.youtube.com/watch?v=n8mIvmGYQts', 'img/dur1.jpg']])
@@ -280,8 +281,18 @@ l= [ mkProfile('kiraly', 'Jozef Király', 'obvinený z úkladnej vraždy',
    
   , mkProfile('marekkotleba', 'Marek Kotleba', 'brat',
     [ mkUL(
-      [ 'trest 500 eur za prečin rozširovania extrémistických materiálov'
+      [ 'trest 500 eur za prečin rozširovania extrémistických materiálov (predával oblečenie s neonacistickými symbolmi) [https://bit.ly/36UWFcj]'
+      , 'obhajoba: vraj netušil, že symboly môžu byť spájané s neonacizmom [https://bit.ly/35K8ZvN]'
       ])
+    ])
+   
+  , mkProfile('mizik', 'Stanislav Mizík', '&#8222;nevie používať počítač&#8220;',
+    [ mkUL(
+      [ 'obžalovaný z prečinu výroby extrémistických materiálov v jednočinnom súbehu s prečinom hanobenie národy, rasy a presvedčenia [https://bit.ly/2PI6lkY]'
+      , 'obhajoba: &#8222;Nevie používať počítač&#8220;[https://bit.ly/2PI7J6Y] &ndash; iba je odfotený, ako ho používa'
+      , 'oblastný predseda pre okresy Revúca, Rožňava'
+      ])
+    , mkGal(['img/miz1.png', 'img/miz3.jpg', 'img/miz2.jpg'])
     ])
    
   , mkProfile('cuper', 'Ján Cuper', 'ožratý šofér',
