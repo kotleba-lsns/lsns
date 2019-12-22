@@ -22,9 +22,7 @@
 }
 .section {
   width: 100%; /* 23% */
-  /*border: 1px black solid;*/
   padding: 5px;
-  /* float: left; */
   margin: 5px;
   display: inline-block;
 }
@@ -78,6 +76,9 @@ ul {
 a img:hover {
   transform: scale(1.2);
 }
+/*.title:hover {
+  transform: scale(1.05);
+}*/
 .gallery {
   margin-left: 40px;
   margin-bottom: 7px;
@@ -90,7 +91,6 @@ h1 {
   column-span: all;
   text-align: center;
   color: #333;
-  //font-variant: small-caps;
   font-size: 40px;
 }
 h1 img {
@@ -162,14 +162,9 @@ function mkDial(n1, n2, c1, c2, ts) {
   }
   return concat('<div class="column"/>', ts);
 }
-function mkImg(i, h=50) { return ('<img src="img/'+i+'.png" height="'+h+'px" />'); }
-const COL = [ '#555', '#922', '#c22', '#f44']
-// 0 - nic
-// 1 - odstupil z vrcholovej fn / stale posobi ako radovy clen
-// 2 - pozastaveny vykon
-// 3 - uplne 
-function mkTitle(n, f, h=50, odst=0) { 
-  return '<div style="display: table-cell; vertical-align: middle; height: '+h+'px;"><h4 style="color: '+COL[odst]+'">' + n
+function mkImg(i) { return ('<img src="img/'+i+'.png" height="100px" />'); }
+function mkTitle(n, f) { 
+  return '<div style="display: table-cell; vertical-align: middle; height: 100px;"><h4>' + n
 		+ (f !== '' ? ' &ndash; '+f : '') + '</h4></div>';
 }
 function linkify(s) {
@@ -190,8 +185,8 @@ function mkGal(items) {
     }
   return d;
 }
-function mkProfile(img, n, f, items, h=100, odst=false) {
-  var title = concat('<div class="title" style="height: '+h+'px;"/>', [mkImg(img, h), mkTitle(n, f, h, odst)]),
+function mkProfile(img, n, f, items) {
+  var title = concat('<div class="title" style="height: 100px;"/>', [mkImg(img), mkTitle(n, f)]),
       text = concat('<div style=""/>', items); // display: none;
   //title.click(function() { text.toggle(); });
   return addSec('#f5f5f5', [concat('<div class="profile"/>', [title, text])]);
@@ -213,9 +208,10 @@ l= [ mkProfile('kiraly', 'Jozef Király', 'obvinený z úkladnej vraždy',
 
   , mkProfile('martinak', 'Róbert Martinák', '<big>11&times;</big> odsúdený kontrolór RSC',
     [ mkUL(
-      [ '3x odsúdený za krádež a výtržníctvo, (tresty boli v 2012 zahladené)'
-      , '6x uznaný vinným z priestupku proti majetku a 2x proti občianskemu spolunažívaniu  [https://bit.ly/2DJ8xBB] [https://bit.ly/2DRms8J]'
-      , 'Kotleba si ho v BB zamestnal ako Kontrolóra regionálnej správy ciest'
+      [ '3x odsúdený za krádež a výtržníctvo, 6x uznaný vinným z priestupku proti majetku a 2x proti občianskemu spolunažívaniu  [https://bit.ly/2DJ8xBB] [https://bit.ly/2DRms8J]'
+      , 'cez vetracie okno sa vkradol do rekreačného zariadenia; muža, ktorý ho pristihol, napadol a vybil mu 4 zuby'
+      , 'všetky tresty boli v 2012 zahladené'
+      , 'takéhoto človeka Kotleba v BB zamestnal ako <i>Kontrolóra</i> regionálnej správy ciest'
       , 'pár mesiacov od nastúpenia do funkcie opäť preverovaný políciou v súvislosti s vyšetrovaním falšovania dokladov'
       //, '<iframe width="640" height="360" src="//www.tvnoviny.sk/player_ssl/15408_video?id=15408&is_web=1&domainName=tvnoviny.sk&domainNameEnv=https://www.tvnoviny.sk&autoplay=0&noads=0&nomidads=0&nopreads=0&nopostads=0&desc=http://www.tvnoviny.sk/domace/1755026_kontrolor-regionalnej-spravy-ciest.-zamestnal-ho-kotleba&DFP_domain_name0=tvnoviny.sk&DFP_domain_name1=main&DFP_section_name0=domace&DFP_section_name1=no&DFP_section_type=article&DFP_detail_id=1755026&upScoreSection=Dom%C3%A1ce&upScorePubDate=2019-12-04T07:19:53+01:00&upScoreAuthor=jhabarova&utm_source=videoarchiv&utm_medium=video&utm_content=[2014-05-06] 19 BB Kontrolor mesta problem.transfer_tvnoviny.mp4 <78>&utm_campaign=embed" style="border:none;" allowfullscreen></iframe>'
       ])
@@ -224,7 +220,7 @@ l= [ mkProfile('kiraly', 'Jozef Király', 'obvinený z úkladnej vraždy',
   , mkProfile('medvecky', 'Andrej Medvecký', 'obžalovaný z ublíženia na zdraví, v&nbsp;podmienke za jazdu pod vplyvom alkoholu',
     [ mkUL(
       [ 'obžalovaný za napadnutie Dominikánca Leniho Cruza (2014); podľa svedkov na ňom sedel, boxoval mu do tváre a kričal "Zabite toho negra, nemá tu čo robiť, toto je tvoj koniec!" [https://bit.ly/2si3Ig6] [https://bit.ly/2RRE3Gb]'
-      , 'vyšetrovaný tiež kvôli napadnutiu muža z Trstenej (2015); niekoľkokrát ho udrel päsťou do tváre a zlomil mu nos, muž bol PN 10 dní [https://bit.ly/36nRSju]'
+      , 'vyšetrovaný tiež kvôli napadnutiu muža z Trstenej (2015); niekoľkokrát ho udrel päsťou do tváre a zlomil mu nos, muž bol 10 dní PN [https://bit.ly/36nRSju]'
       , 'predseda severoslovenského krajského klubu'
       , 'zvolený do parlamentu; vzdal sa mandátu, namiesto neho nastúpil Mazurek'
       ])
@@ -315,7 +311,7 @@ l= [ mkProfile('kiraly', 'Jozef Király', 'obvinený z úkladnej vraždy',
     , mkGal(['img/miz1.png', 'img/miz3.jpg', 'img/miz2.jpg'])
     ])
    
-  , mkProfile('cuper', 'Ján Cuper', 'ožratý šofér',
+  , mkProfile('cuper', 'Ján Cuper', 'ožratý šofér chránený imunitou',
     [ mkUL(
       [ 'v 2005 spôsobil nehodu pod vplyvom alkoholu - chránila ho poslanecká imunita'
       , 'v 2016 kandidoval za ĽSNS'
