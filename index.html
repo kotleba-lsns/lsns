@@ -18,6 +18,7 @@
 #body {
   column-count: 3;
   column-width: 400px;
+  column-gap: 20px;
 }
 .section {
   width: 100%; /* 23% */
@@ -85,6 +86,16 @@ a img:hover {
   margin-right: 5px;
 }
 
+h1 {
+  column-span: all;
+  text-align: center;
+  color: #333;
+  //font-variant: small-caps;
+  font-size: 40px;
+}
+h1 img {
+  vertical-align: middle;
+}
   </style>
   <link rel="stylesheet" href="magnific-popup.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -93,6 +104,8 @@ a img:hover {
 <body>
 
 <div id="body">
+
+<h1> <img src="img/logo.png" height="100px" /> Výkvet ĽSNS &ndash; odsúdení násilníci, fašisti, klamári </h1>
 
 <script type="text/javascript"> // http://www.youtube.com/watch?v=8eAQp6D0onk
 $.extend(true, $.magnificPopup.defaults, {  
@@ -235,9 +248,11 @@ l= [ mkProfile('kiraly', 'Jozef Király', 'obvinený z úkladnej vraždy',
     , mkGal(['img/mag1.png', 'img/mag2.jpg', 'img/mag3.jpg', 'img/mag4.jpg', 'img/mag5.jpg'])
     ])
    
-  , mkProfile('rogel', 'Rastislav Rogel', 'odsúdený za ublíženie na zdraví; vytetovaný hákový kríž',
+  , mkProfile('rogel', 'Rastislav Rogel', '2&times; odsúdený za ublíženie na zdraví; vytetovaný hákový kríž',
     [ mkUL(
-      [ 'vyviazol so 14 mesiacmi podmienky za výtržníctvo'
+      [ 'odsúdený v 2004 - "spôsobil zranenia s dobou liečenia asi 5 mesiacov s trvalými následkami" [https://bit.ly/35QZlHO]'
+      , 'v 2008 sa opäť pobil - rasový motív súd neuznal napriek tomu, že mal kričať "Zabijeme vás, vy židovské svine, my sme Juden Mord!" - svedkovia začali meniť výpovede a tvrdiť, že už si nepamätajú'
+      , 'vyviazol iba so 14 mesiacmi podmienky za výtržníctvo, po odvolaní ho dokonca oslobodili [https://bit.ly/35QZlHO][https://bit.ly/2Shxa11][https://bit.ly/34L1hAn][https://bit.ly/2QnjwXF]'
       , 'na ruke mal vytetovaný hákový kríž'
       , 'bývalý líder skupín Krátky proces a Juden Mord ("Vraždenie Židov")'
       , 'v 2016 kandidoval za ĽSNS z 44. miesta'
@@ -284,7 +299,7 @@ l= [ mkProfile('kiraly', 'Jozef Király', 'obvinený z úkladnej vraždy',
              ['https://www.youtube.com/watch?v=ClUOLEO--Fk', 'img/jak5.png']])
     ])
    
-  , mkProfile('marekkotleba', 'Marek Kotleba', 'brat',
+  , mkProfile('marekkotleba', 'Marek Kotleba', 'vodcov brat, ktorý &#8222;nepozná&#8220; neonacistické symboly',
     [ mkUL(
       [ 'trest 500 eur za prečin rozširovania extrémistických materiálov (predával oblečenie s neonacistickými symbolmi) [https://bit.ly/36UWFcj]'
       , 'obhajoba: vraj netušil, že symboly môžu byť spájané s neonacizmom [https://bit.ly/35K8ZvN]'
