@@ -17,212 +17,37 @@
   <meta property="og:image" content="https://kotleba-lsns.github.io/lsns/img/logo.png" />
   <meta property="og:locale" content="sk_SK" />
 
-  <style type="text/css">
-.tsection {
-  width: 100%;
-  padding: 5px;
-  float: left;
-  margin: 5px;
-}
-#body {
-  column-count: 3;
-  column-width: 400px;
-  column-gap: 20px;
-}
-.section {
-  width: 100%; /* 23% */
-  padding: 5px;
-  margin: 5px;
-  display: inline-block;
-}
-h2 {
-  font-variant: small-caps;
-  color: #666;
-  text-align: center;
-}
-h4 {
-  margin: auto;
-}
-hr {
-  width: 40%;
-  border: 1px solid #eee;
-}
-.profile {
-  clear: both;
-  margin-top: 10px;
-}
-.title {
-  display: block;
-}
-.profile .title img {
-  float: left;
-  margin-right: 10px;
-  display: inline-block;
-}
-.profile h4 {
-  line-height: 25px;
-  font-size: 21px;
-  color: #555;
-  margin: 0px 10px 0px 10px;
-}
-ul {
-  margin-right: 10px;
-}
-.column {
-  margin-left: 20px;
-  clear: both;
-  display: flex;
-  flex-direction: column;
-  font-family: Helvetica, Arial, sans serif;
-}
-.name {
-  clear: both;
-  color: #90949c;
-  display: block;
-  font-size: 11px;
-  line-height: 14px;
-}
-a img:hover {
-  transform: scale(1.2);
-}
-/*.title:hover {
-  transform: scale(1.05);
-}*/
-.gallery {
-  margin-left: 40px;
-  margin-bottom: 7px;
-}
-.gallery img {
-  margin-right: 5px;
-}
-
-h1 {
-  column-span: all;
-  text-align: center;
-  color: #333;
-  font-size: 40px;
-}
-h1 img {
-  vertical-align: middle;
-}
-
-@media screen and (max-width: 540px) {
-.profile h4 {
-  font-size: 18px !important;
-}
-h1 {
-  font-size: 28px !important;
-}
-h1 img {
-  float: left;
-}
-}
-
-  </style>
+  <link rel="stylesheet" href="lsns.css">
   <link rel="stylesheet" href="magnific-popup.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="jquery.magnific-popup.min.js"></script>
+  <script src="lsns.js"></script>
 </head>
 <body>
 
-<div id="body">
+<header>
+  <ul>
+    <li><a href="index.html">Násilníci</a></li>
+    <li><a href="weby.html">Kotleboweby</a></li>
+  </ul>
+</header>
 
 <h1> <img src="img/logo.png" height="100px" /> Výkvet ĽSNS &ndash; odsúdení násilníci, fašisti, klamári </h1>
 
-<script type="text/javascript"> // http://www.youtube.com/watch?v=8eAQp6D0onk
-$.extend(true, $.magnificPopup.defaults, {  
-    iframe: {
-        patterns: {
-           youtube: {
-              index: 'youtube.com/', 
-              id: function (url) {
-                var [url, t] = url.split('&t=');
-                return url.split('?v=')[1] + '?autoplay=1' + (t !== undefined ? '&start='+t : '')
-              },
-              src: 'https://www.youtube.com/embed/%id%' 
-          },
-          vimeo: {
-              index: 'vimeo.com/', 
-              id: '/', 
-              src: 'https://www.vimeo.com/%id%?autoplay=1' 
-          }
-        }
-    }
-});
+<quote>
+Kotlebovci sa tvária, že chcú Slovensko očistiť. Vo vlastných radoch však majú odsúdených násilníkov a fašistov.
+</quote>
 
-$(document).ready(function() {
-    $('.gallery').each(function() { // the containers for all your galleries
-        $(this).magnificPopup({
-            delegate: 'a', // the selector for gallery item
-            type: 'image',
-            gallery: {
-            enabled:true
-            }
-        });
-    });  
-});
+<div id="body">
 
-function concat(outer, items) {
-  var d = $(outer);
-  for (var i=0; i<items.length; i++) $(items[i]).appendTo(d);
-  return d;
-}
-function mkName(n) { return ('<div class="name">'+n+'</div>'); }
-function mkBubble(t) { return ('<div class="bubble">'+t+'</div>'); }
-function mkMsg(n, c, t) { return concat('<div class="'+c+'"/>', [mkName(n), mkBubble(t)]); }
-function mkDial(n1, n2, c1, c2, ts) {
-  for (var i=0; i<ts.length; i++) {
-    if (ts[i] === "...") {
-      if (i+1 < ts.length && ts[i+1] === "...") {
-        ts[i] = "<span />";
-      } else {
-        ts[i] = "<hr />";
-      }
-    } else {
-      ts[i] = mkMsg(i%2 ? n2 : n1, i%2 ? c2 : c1, ts[i]);
-    }
-  }
-  return concat('<div class="column"/>', ts);
-}
-function mkImg(i) { return ('<img src="img/'+i+'.png" height="100px" />'); }
-function mkTitle(n, f) { 
-  return '<div style="display: table-cell; vertical-align: middle; height: 100px;"><h4>' + n
-		+ (f !== '' ? ' &ndash; '+f : '') + '</h4></div>';
-}
-function linkify(s) {
-    return s.replace(/\[(https?:\/\/[^ \]]*)( [^\]]*)?\]/gim, '<a href="$1" target="_blank">$2<img src="img/link.png" height="12px" /></a>');
-}
-function mkUL(items) {
-  var d = $('<ul/>');
-  for (var i=0; i<items.length; i++) $('<li>'+linkify(items[i])+'</li>').appendTo(d);
-  return d;
-}
-function mkGal(items) {
-  var d = $('<div class="gallery" />');
-  for (var i=0; i<items.length; i++)
-    if (typeof(items[i]) === 'object') {
-      $('<a href="' + items[i][0] + '" class="mfp-iframe"><img src="' + items[i][1] + '" height="50px" /></a>').appendTo(d);
-    } else {
-      $('<a href="' + items[i] + '"><img src="' + items[i] + '" height="50px" style="max-width: 100px" /></a>').appendTo(d);
-    }
-  return d;
-}
-function mkProfile(img, n, f, items) {
-  var title = concat('<div class="title" style="height: 100px;"/>', [mkImg(img), mkTitle(n, f)]),
-      text = concat('<div style=""/>', items); // display: none;
-  //title.click(function() { text.toggle(); });
-  return addSec('#f5f5f5', [concat('<div class="profile"/>', [title, text])]);
-}
-function mkTit(t) { return '<h2>'+t+'</h2>'; }
+<!-- // http://www.youtube.com/watch?v=8eAQp6D0onk -->
 
-function addSec(bc, its, c="section") {
-  concat('<div class="'+c+'" style="background-color: '+bc+'"/>', its).appendTo($('#body'));
-}
+<script type="text/javascript"> 
+DIR = 'img/odsudeni/';
 
-
-l= [ mkProfile('kiraly', 'Jozef Király', 'obvinený z úkladnej vraždy',
+l= [ mkProfile('kiraly', 'Jozef Király', 'obžalovaný z úkladnej vraždy',
     [ mkUL(
-      [ 'Na svojom dvore mal dobodať muža a prinútiť manželku, aby mu pomohla odstrániť telo [https://bit.ly/2rQbuxH] [https://bit.ly/2RuT28P] [https://bit.ly/2rRcIca]'
+      [ 'Na svojom dvore mal dobodať muža a prinútiť manželku, aby mu pomohla odstrániť telo [https://bit.ly/2NGH5cI] [https://bit.ly/2rQbuxH] [https://bit.ly/2RuT28P] [https://bit.ly/2rRcIca]'
       , 'V apríli 2019 sa pobil kvôli nálepke [https://bit.ly/2Pcy3EH]'
       , 'Király je bývalý okresný predseda ĽSNS (Poprad), po obvinení mu pozastavili členstvo'
       ])
@@ -247,7 +72,7 @@ l= [ mkProfile('kiraly', 'Jozef Király', 'obvinený z úkladnej vraždy',
       , 'predseda severoslovenského krajského klubu'
       , 'zvolený do parlamentu; vzdal sa mandátu, namiesto neho nastúpil Mazurek'
       ])
-    , mkGal(['img/med1.png', 'img/med2.jpg', 'img/med3.jpg'])
+    , mkGal(['med1.png', 'med2.jpg', 'med3.jpg'])
     ])
 
   , mkProfile('bahno', 'Peter Bahno', 'odsúdený za násilné trestné činy (3&nbsp;roky s podm. odkladom na 5&nbsp;rokov)',
@@ -255,7 +80,7 @@ l= [ mkProfile('kiraly', 'Jozef Király', 'obvinený z úkladnej vraždy',
       [ 'vinný z prečinu ublíženia na zdraví, pokusu zločinu ublíženia na zdraví, prečinu výtržníctva a zo zločinu obmedzovania osobnej slobody vo forme spolupáchateľstva (2013) [https://bit.ly/2RI2uWs]'
       , 'asistent poslanca Stanislava Drobného'
       ])
-    , mkGal(['img/bah1.jpg', 'img/bah2.jpg'])
+    , mkGal(['bah1.jpg', 'bah2.jpg'])
     ])
    
   , mkProfile('magat', 'Marián Magát', 'odsúdený za nedovolené ozbrojovanie (3&nbsp;roky podm.)',
@@ -264,7 +89,7 @@ l= [ mkProfile('kiraly', 'Jozef Király', 'obvinený z úkladnej vraždy',
       , 'obžalovaný pre hanobenie národa, rasy a presvedčenia [https://domov.sme.sk/c/22063880/sud-s-magatom-nebude-prokurator-vzal-obzalobu-spat.html]'
       , 'v 2016 kandidoval za ĽSNS z 88. miesta'
       ])
-    , mkGal(['img/mag1.png', 'img/mag2.jpg', 'img/mag3.jpg', 'img/mag4.jpg', 'img/mag5.jpg'])
+    , mkGal(['mag1.png', 'mag2.jpg', 'mag3.jpg', 'mag4.jpg', 'mag5.jpg'])
     ])
    
   , mkProfile('rogel', 'Rastislav Rogel', '2&times; odsúdený za ublíženie na zdraví; vytetovaný hákový kríž',
@@ -276,7 +101,7 @@ l= [ mkProfile('kiraly', 'Jozef Király', 'obvinený z úkladnej vraždy',
       , 'bývalý líder skupín Krátky proces a Juden Mord (&#8222;Vraždenie Židov&#8220;)'
       , 'v 2016 kandidoval za ĽSNS z 44. miesta'
       ])
-    , mkGal(['img/rog1.png', 'img/rog2.jpg', 'img/rog3.jpg', 'img/rog4.png'])
+    , mkGal(['rog1.png', 'rog2.jpg', 'rog3.jpg', 'rog4.png'])
     ])
    
   , mkProfile('mazurek', 'Milan Mazurek', 'vinný z úmyselného prečinu hanobenia národa, rasy či presvedčenia',
@@ -286,7 +111,7 @@ l= [ mkProfile('kiraly', 'Jozef Király', 'obvinený z úkladnej vraždy',
       , 'do parlamentu sa dostal ako náhradník za Medveckého'
       , 'predseda východoslovenského krajského klubu'
       ])
-    , mkGal([['https://www.youtube.com/watch?v=8eAQp6D0onk&t=815', 'img/maz1.png'], 'img/maz3.jpg', 'img/maz2.jpg', 'img/maz4.jpg', 'img/maz5.jpg', 'img/maz6.png']) // https://www.youtube.com/watch?v=5JAqE4feToQ https://www.youtube.com/watch?v=sM-EY5u3XFM 
+    , mkGal([['https://www.youtube.com/watch?v=8eAQp6D0onk&t=815', 'maz1.png'], 'maz3.jpg', 'maz2.jpg', 'maz4.jpg', 'maz5.jpg', 'maz6.png']) // https://www.youtube.com/watch?v=5JAqE4feToQ https://www.youtube.com/watch?v=sM-EY5u3XFM 
     ])  
    
   , mkProfile('jakubik', 'Rastislav Jakubík', 'vytetovaný hákový kríž',
@@ -295,7 +120,7 @@ l= [ mkProfile('kiraly', 'Jozef Király', 'obvinený z úkladnej vraždy',
     , 'Kotleba to opakovane popiera napriek fotografiám a napriek tomu, že to sám Jakubík priznal'
     , 'predseda západoslovenského krajského klubu'
     ])
-  , mkGal(['img/jak3.png', 'img/jak0.png', 'img/jak2.jpg', ['https://www.youtube.com/watch?v=TiXCe_k-F9g', 'img/jak4.png'], ['https://www.youtube.com/watch?v=r-R7qWrMHvg', 'img/jak5.png']])
+  , mkGal(['jak3.png', 'jak0.png', 'jak2.jpg', ['https://www.youtube.com/watch?v=TiXCe_k-F9g', 'jak4.png'], ['https://www.youtube.com/watch?v=r-R7qWrMHvg', 'jak5.png']])
   ])
 
   , mkProfile('durica', 'Ondrej Ďurica', 'hajlujúci hovorca',
@@ -305,17 +130,18 @@ l= [ mkProfile('kiraly', 'Jozef Király', 'obvinený z úkladnej vraždy',
       , 'priložená nahrávka, ako hajluje na koncerte (Biely Odpor Live) [https://vimeo.com/377172660]'
       , 'hovorca ĽSNS, asistent poslanca Schlossára'
       ])
-    , mkGal([['https://www.youtube.com/watch?v=ClUOLEO--Fk', 'img/jak5.png'], ['https://www.youtube.com/watch?v=n8mIvmGYQts', 'img/dur1.jpg']])
+    , mkGal([['https://www.youtube.com/watch?v=ClUOLEO--Fk', 'jak5.png'], ['https://www.youtube.com/watch?v=n8mIvmGYQts', 'dur1.jpg']])
     ])
   
   , mkProfile('kotleba', 'Marian Kotleba', 'preverovaný pre podozrenie zo sexuálneho zneužívania',
     [ mkUL(
       [ 'preverovaný pre podozrenie zo sexuálneho zneužívania [https://bit.ly/2rhZjKb]'
+      , 'obžalovaný z prejavu sympatií k hnutiu smerujúcemu k potlačeniu práv a slobôd za použitie šekov v hodnote 1488 eur [https://bit.ly/2VuSX5V] [https://bit.ly/31u3qTc]'
       , '2003-2007 vodca Slovenskej pospolitosti, strana bola rozpustená Najvyšším súdom SR'
       , 'predseda ĽSNS'
       ])
-    , mkGal([['https://www.youtube.com/watch?v=r-R7qWrMHvg', 'img/jak5.png'], ['https://www.youtube.com/watch?v=TiXCe_k-F9g', 'img/jak4.png'], ['https://www.youtube.com/watch?v=_QrbupuymUs', 'img/kot1.png'],
-             ['https://www.youtube.com/watch?v=ClUOLEO--Fk', 'img/jak5.png'], ['https://www.youtube.com/watch?v=909fiolMm6g', 'img/jak5.png']])
+    , mkGal([['https://www.youtube.com/watch?v=r-R7qWrMHvg', 'jak5.png'], ['https://www.youtube.com/watch?v=TiXCe_k-F9g', 'jak4.png'], ['https://www.youtube.com/watch?v=_QrbupuymUs', 'kot1.png'],
+             ['https://www.youtube.com/watch?v=ClUOLEO--Fk', 'jak5.png'], ['https://www.youtube.com/watch?v=909fiolMm6g', 'jak5.png']])
     ])
    
   , mkProfile('marekkotleba', 'Marek Kotleba', 'vodcov brat, ktorý &#8222;nepozná&#8220; neonacistické symboly',
@@ -338,7 +164,7 @@ l= [ mkProfile('kiraly', 'Jozef Király', 'obvinený z úkladnej vraždy',
       , 'obhajoba: &#8222;Nevie používať počítač&#8220;[https://bit.ly/2PI7J6Y] &ndash; iba je odfotený, ako ho používa'
       , 'oblastný predseda pre okresy Revúca, Rožňava'
       ])
-    , mkGal(['img/miz1.png', 'img/miz3.jpg', 'img/miz2.jpg'])
+    , mkGal(['miz1.png', 'miz3.jpg', 'miz2.jpg'])
     ])
    
   , mkProfile('cuper', 'Ján Cuper', 'ožratý šofér chránený imunitou',
@@ -347,9 +173,8 @@ l= [ mkProfile('kiraly', 'Jozef Király', 'obvinený z úkladnej vraždy',
       , 'v 2016 kandidoval za ĽSNS'
       , 'bývalý poslanec za ĽS-HZDS, obhajca Ivana Lexu'
       ])
-    , mkGal([['https://www.youtube.com/watch?v=m5fE1dILgWs', 'img/cuper.png']])
+    , mkGal([['https://www.youtube.com/watch?v=m5fE1dILgWs', 'cuper.png']])
     ])
-   
   ];
 
 </script>

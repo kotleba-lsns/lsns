@@ -1,0 +1,141 @@
+quote {
+  display: block;
+  text-align: center;
+  font-style: italic;
+  font-weight: bold;
+  font-size: xx-large;
+  color: #666;
+  padding: 20px;
+}
+header {
+  position: sticky;
+  top: 0;
+  min-height: 4rem;
+  background-color: #444; /* #007bff; */
+  display: flex;
+  flex-flow: row nowrap;
+  box-sizing: border-box;    
+}
+header a {
+  text-decoration: none;
+  color: white;
+/*   font-weight: bold; */
+  font-variant: small-caps;
+  letter-spacing: 2px;
+  font-size: large;
+  margin: 10px;
+}
+header a:hover {
+  font-weight: bold;
+}
+header ul {
+  display: flex;
+  list-style: none;
+}
+.tsection {
+  width: 100%;
+  padding: 5px;
+  float: left;
+  margin: 5px;
+}
+#body {
+  column-count: 3;
+  column-width: 400px;
+  column-gap: 20px;
+  padding: 20px;
+}
+.section {
+  width: 100%; /* 23% */
+  padding: 5px;
+  margin: 5px;
+  display: inline-block;
+}
+h2 {
+  font-variant: small-caps;
+  color: #666;
+  text-align: center;
+}
+h4 {
+  margin: auto;
+}
+hr {
+  width: 40%;
+  border: 1px solid #eee;
+}
+.profile {
+  clear: both;
+  margin-top: 10px;
+}
+.title {
+  display: block;
+}
+.profile .title img {
+  float: left;
+  margin-right: 10px;
+  display: inline-block;
+}
+.profile h4 {
+  line-height: 25px;
+  font-size: 21px;
+  color: #555;
+  margin: 0px 10px 0px 10px;
+}
+ul {
+  margin-right: 10px;
+}
+.column {
+  margin-left: 20px;
+  clear: both;
+  display: flex;
+  flex-direction: column;
+  font-family: Helvetica, Arial, sans serif;
+}
+.name {
+  clear: both;
+  color: #90949c;
+  display: block;
+  font-size: 11px;
+  line-height: 14px;
+}
+a img:hover {
+  transform: scale(1.2);
+}
+/*.title:hover {
+  transform: scale(1.05);
+}*/
+.gallery {
+  margin-left: 40px;
+  margin-bottom: 7px;
+}
+.gallery img {
+  margin-right: 5px;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  font-size: 40px;
+  height: 100px;
+  vertical-align: middle;
+}
+h1 img {
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 540px) {
+.profile h4 {
+  font-size: 18px !important;
+}
+h1 {
+  font-size: 28px !important;
+  margin-top: 40px;
+}
+h1 img {
+  float: left;
+}
+quote {
+  font-size: 22px !important;
+  padding: 5px !important;
+}
+}
