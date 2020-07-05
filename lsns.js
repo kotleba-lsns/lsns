@@ -81,8 +81,13 @@ function mkProfile(img, n, f, items) {
   //title.click(function() { text.toggle(); });
   return addSec('#f5f5f5', [concat('<div class="profile"/>', [title, text])]);
 }
+function mkItm(n, items) {
+  var title = '<h4>' + n + '</h4>',
+      text = concat('<div style=""/>', items);
+  return addSec('#f5f5f5', [concat('<div class="profile"/>', [title, text])]);
+}
 function mkTit(t) { return '<h2>'+t+'</h2>'; }
-
+function mkP(t) { return '<p>'+linkify(t)+'</p>'; }
 function addSec(bc, its, c="section") {
   concat('<div class="'+c+'" style="background-color: '+bc+'"/>', its).appendTo($('#body'));
 }
