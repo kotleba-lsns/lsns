@@ -30,6 +30,7 @@ header a:hover {
 }
 header ul {
   display: flex;
+  flex-wrap: wrap;
   list-style: none;
 }
 .tsection {
@@ -121,6 +122,9 @@ h1 {
 h1 img {
   vertical-align: middle;
   margin-right: 10px;
+}
+span#title {
+  height: 100px;
 }
 
 @media screen and (max-width: 540px) {
