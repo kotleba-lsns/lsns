@@ -45,7 +45,7 @@ header ul {
   column-gap: 20px;
   padding: 20px;
 }
-.section {
+.section, section {
   width: 100%; /* 23% */
   padding: 5px;
   margin: 5px;
@@ -110,6 +110,8 @@ a img:hover {
 }
 .gallery img {
   margin-right: 5px;
+  height: 50px;
+  max-width: 100px;
 }
 
 h1 {

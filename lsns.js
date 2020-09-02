@@ -71,7 +71,7 @@ function mkGal(items) {
     if (typeof(items[i]) === 'object') {
       $('<a href="' + DIR + items[i][0] + '" class="mfp-iframe"><img src="' + DIR + items[i][1] + '" height="50px" /></a>').appendTo(d);
     } else {
-      $('<a href="' + DIR + items[i] + '"><img src="' + DIR + items[i] + '" height="50px" style="max-width: 100px" /></a>').appendTo(d);
+      $('<a href="' + DIR + items[i] + '"><img src="' + DIR + items[i] + '" /></a>').appendTo(d);
     }
   return d;
 }
