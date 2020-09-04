@@ -24,7 +24,10 @@ $(document).ready(function() {
             delegate: 'a', // the selector for gallery item
             type: 'image',
             gallery: {
-            enabled:true
+                enabled:true
+            },
+            image: {
+                titleSrc: function(item) { return item.img.attr('alt'); }
             }
         });
     });  
@@ -69,9 +72,13 @@ function mkGal(items) {
   var d = $('<div class="gallery" />');
   for (var i=0; i<items.length; i++)
     if (typeof(items[i]) === 'object') {
-      $('<a href="' + DIR + items[i][0] + '" class="mfp-iframe"><img src="' + DIR + items[i][1] + '" height="50px" /></a>').appendTo(d);
+      if (items[i][0].includes("https://www.youtube.com/")) {
+          $('<a href="' + items[i][0] + '" class="mfp-iframe"><img src="' + DIR + items[i][1] + '" height="50px" /></a>').appendTo(d);
+      } else {
+          $('<a href="' + DIR + items[i][0] + '"><img alt="' + items[i][1] +'" src="' + DIR + items[i][0] + '" /></a>').appendTo(d);
+      }
     } else {
-      $('<a href="' + DIR + items[i] + '"><img src="' + DIR + items[i] + '" /></a>').appendTo(d);
+      $('<a href="' + DIR + items[i] + '"><img alt="" src="' + DIR + items[i] + '" /></a>').appendTo(d);
     }
   return d;
 }
