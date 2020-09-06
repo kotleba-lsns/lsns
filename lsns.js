@@ -83,7 +83,7 @@ function mkGal(items) {
   return d;
 }
 function mkProfile(img, n, f, items) {
-  var title = concat('<div class="title" style="height: 100px;"/>', [mkImg(img), mkTitle(n, f)]),
+  var title = concat('<div class="title"/>', [mkImg(img), mkTitle(n, f)]),
       text = concat('<div style=""/>', items); // display: none;
   //title.click(function() { text.toggle(); });
   return addSec('#f5f5f5', [concat('<div class="profile"/>', [title, text])]);

@@ -70,6 +70,7 @@ hr {
 }
 .title {
   display: block;
+  min-height: 100px;
 }
 .profile .title img {
   float: left;
