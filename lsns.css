@@ -33,12 +33,12 @@ header ul {
   flex-wrap: wrap;
   list-style: none;
 }
-.tsection {
+/*.tsection {
   width: 100%;
   padding: 5px;
   float: left;
   margin: 5px;
-}
+}*/
 #body {
   column-count: 3;
   column-width: 400px;
@@ -102,6 +102,12 @@ ul {
 a {
   text-decoration: none;
 }
+:target::before {
+  content: "";
+  display: block;
+  height: 80px; /* fixed header height*/
+  margin: -80px 0 0; /* negative fixed header height */
+}
 a img:hover {
   transform: scale(1.2);
 }
@@ -132,7 +138,6 @@ h1 img {
 span#title {
   height: 100px;
 }
-
 @media screen and (max-width: 540px) {
 .profile h4 {
   font-size: 18px !important;
