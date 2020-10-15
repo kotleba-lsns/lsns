@@ -99,6 +99,9 @@ ul {
   font-size: 11px;
   line-height: 14px;
 }
+a {
+  text-decoration: none;
+}
 a img:hover {
   transform: scale(1.2);
 }

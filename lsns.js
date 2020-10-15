@@ -90,7 +90,7 @@ function mkProfile(img, n, f, items) {
   return addSec('#f5f5f5', [concat('<div class="profile"/>', [title, text])]);
 }
 function mkItm(n, items) {
-  var title = '<h4>' + n + '</h4>',
+  var title = '<a href="#' + idFromStr(n) + '"><h4 id="' + idFromStr(n) + '">' + n + '</h4></a>',
       text = concat('<div style=""/>', items);
   return addSec('#f5f5f5', [concat('<div class="profile"/>', [title, text])]);
 }
@@ -98,4 +98,37 @@ function mkTit(t) { return '<h2>'+t+'</h2>'; }
 function mkP(t) { return '<p>'+linkify(t)+'</p>'; }
 function addSec(bc, its, c="section") {
   concat('<div class="'+c+'" style="background-color: '+bc+'"/>', its).appendTo($('#body'));
+}
+
+function idFromStr(str) {
+  return str
+    .replace(/[ÀÁÂÃÄÅ]/g,"A")
+    .replace(/[àáâãäå]/g,"a")
+    .replace(/[Č]/g,"C")
+    .replace(/[č]/g,"c")
+    .replace(/[Ď]/g,"D")
+    .replace(/[ď]/g,"d")
+    .replace(/[ÈÉÊË]/g,"E")
+    .replace(/[é]/g,"e")
+    .replace(/[Í]/g,"I")
+    .replace(/[í]/g,"i")
+    .replace(/[ĹĽ]/g,"L")
+    .replace(/[ĺľ]/g,"l")
+    .replace(/[Ň]/g,"N")
+    .replace(/[ň]/g,"n")
+    .replace(/[ÓÔ]/g,"O")
+    .replace(/[óô]/g,"o")
+    .replace(/[Ŕ]/g,"R")
+    .replace(/[ŕ]/g,"r")
+    .replace(/[Š]/g,"S")
+    .replace(/[š]/g,"s")
+    .replace(/[Ť]/g,"T")
+    .replace(/[ť]/g,"t")
+    .replace(/[Ú]/g,"U")
+    .replace(/[ú]/g,"u")
+    .replace(/[Ý]/g,"Y")
+    .replace(/[ý]/g,"y")
+    .replace(/[Ž]/g,"z")
+    .replace(/[ž]/g,"z")
+    .replace(/[^a-z0-9,.?!-]/gi,'_'); // final clean up
 }
