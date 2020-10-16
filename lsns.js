@@ -73,12 +73,12 @@ function mkGal(items) {
   for (var i=0; i<items.length; i++)
     if (typeof(items[i]) === 'object') {
       if (items[i][0].includes("https://www.youtube.com/")) {
-          $('<a href="' + items[i][0] + '" class="mfp-iframe"><img src="' + DIR + items[i][1] + '" height="50px" /></a>').appendTo(d);
+          $('<a href="' + items[i][0] + '" class="mfp-iframe"><img src="' + DIR + 'thumb-' + items[i][1] + '" height="50px" width="80px" /></a>').appendTo(d);
       } else {
-          $('<a href="' + DIR + items[i][0] + '"><img alt="' + items[i][1] +'" src="' + DIR + items[i][0] + '" /></a>').appendTo(d);
+          $('<a href="' + DIR + items[i][0] + '"><img alt="' + items[i][1] +'" src="' + DIR + 'thumb-' + items[i][0] + '" height="50px" width="80px" /></a>').appendTo(d);
       }
     } else {
-      $('<a href="' + DIR + items[i] + '"><img alt="" src="' + DIR + items[i] + '" /></a>').appendTo(d);
+      $('<a href="' + DIR + items[i] + '"><img alt="" src="' + DIR + 'thumb-' + items[i] + '" height="50px" width="80px" /></a>').appendTo(d);
     }
   return d;
 }
