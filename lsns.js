@@ -61,7 +61,7 @@ function mkTitle(n, f) {
 		+ (f !== '' ? ' &ndash; '+f : '') + '</h4></div>';
 }
 function linkify(s) {
-    return s.replace(/\[(https?:\/\/[^ \]]*)( [^\]]*)?\]/gim, '<a href="$1" target="_blank">$2<img src="img/link.png" height="12px" /></a>');
+    return s.replace(/\[(https?:\/\/[^ \]]*)( [^\]]*)?\]/gim, '<a href="$1" target="_blank">$2<img src="img/link.png" height="12px" width="12px" /></a>');
 }
 function mkUL(items) {
   var d = $('<ul/>');
