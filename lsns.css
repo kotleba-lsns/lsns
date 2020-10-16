@@ -33,6 +33,10 @@ header ul {
   flex-wrap: wrap;
   list-style: none;
 }
+.active {
+  font-weight: bold;
+  text-decoration: underline;
+}
 /*.tsection {
   width: 100%;
   padding: 5px;
@@ -105,8 +109,8 @@ a {
 :target::before {
   content: "";
   display: block;
-  height: 80px; /* fixed header height*/
-  margin: -80px 0 0; /* negative fixed header height */
+  height: 80px;  
+  margin: -80px 0 0; 
 }
 a img:hover {
   transform: scale(1.2);

@@ -19,18 +19,25 @@ $.extend(true, $.magnificPopup.defaults, {
 });
 
 $(document).ready(function() {
-    $('.gallery').each(function() { // the containers for all your galleries
-        $(this).magnificPopup({
-            delegate: 'a', // the selector for gallery item
-            type: 'image',
-            gallery: {
-                enabled:true
-            },
-            image: {
-                titleSrc: function(item) { return item.img.attr('alt'); }
-            }
-        });
-    });  
+  $('.gallery').each(function() { // the containers for all your galleries
+    $(this).magnificPopup({
+      delegate: 'a', // the selector for gallery item
+      type: 'image',
+      gallery: {
+        enabled:true
+      },
+      image: {
+        titleSrc: function(item) { return item.img.attr('alt'); }
+      }
+    });
+  });
+
+  $('.nav-item').on('click',function(){
+    console.log('daco');
+    $('.nav-item').removeClass('active');
+    $(this).addClass('active');
+  });  
+
 });
 
 function concat(outer, items) {
@@ -57,8 +64,8 @@ function mkDial(n1, n2, c1, c2, ts) {
 }
 function mkImg(i) { return ('<img src="'+DIR+i+'.webp" height="100px" width="100px" />'); }
 function mkTitle(n, f) { 
-  return '<div style="display: table-cell; vertical-align: middle; height: 100px;"><h4>' + n
-		+ (f !== '' ? ' &ndash; '+f : '') + '</h4></div>';
+  return '<div style="display: table-cell; vertical-align: middle; height: 100px;">' +
+    '<a href="#' + idFromStr(n) + '"><h4 id="' + idFromStr(n) + '">' + n + (f !== '' ? ' &ndash; '+f : '') + '</h4></a></div>';
 }
 function linkify(s) {
     return s.replace(/\[(https?:\/\/[^ \]]*)( [^\]]*)?\]/gim, '<a href="$1" target="_blank">$2<img src="img/link.png" height="12px" width="12px" /></a>');
