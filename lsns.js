@@ -55,7 +55,7 @@ function mkDial(n1, n2, c1, c2, ts) {
   }
   return concat('<div class="column"/>', ts);
 }
-function mkImg(i) { return ('<img src="'+DIR+i+'.png" height="100px" width="100px" />'); }
+function mkImg(i) { return ('<img src="'+DIR+i+'.webp" height="100px" width="100px" />'); }
 function mkTitle(n, f) { 
   return '<div style="display: table-cell; vertical-align: middle; height: 100px;"><h4>' + n
 		+ (f !== '' ? ' &ndash; '+f : '') + '</h4></div>';
