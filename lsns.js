@@ -79,6 +79,7 @@ function mkGal(items) {
       }
     } else {
       $('<a href="' + DIR + items[i] + '"><img alt="" src="' + DIR + 'thumb-' + items[i] + '" height="50px" width="80px" /></a>').appendTo(d);
+      console.log('CHYBA ALT ', items[i]);
     }
   return d;
 }
