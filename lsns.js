@@ -1,3 +1,4 @@
+/*
 $.extend(true, $.magnificPopup.defaults, {  
     iframe: {
         patterns: {
@@ -37,6 +38,7 @@ $(document).ready(function() {
     $(this).addClass('active');
   });
 });
+*/
 
 function concat(outer, items) {
   var d = $(outer);
