@@ -19,7 +19,7 @@ function mkDial(n1, n2, c1, c2, ts) {
 function mkImg(i) { return ('<img src="'+DIR+i+'.webp" height="100px" width="100px" />'); }
 function mkTitle(n, f) { 
   return '<div style="display: table-cell; vertical-align: middle; height: 100px;">' +
-    '<h4><a href="#' + idFromStr(n) + '">' + n + (f !== '' ? ' &ndash; '+f : '') + '</a></h4></div>';
+    '<h4><a href="#' + idFromStr(n) + '" id="' + idFromStr(n) + '">' + n + (f !== '' ? ' &ndash; '+f : '') + '</a></h4></div>';
 }
 function linkify(s) {
     return s.replace(/\[(https?:\/\/[^ \]]*)( [^\]]*)?\]/gim, '<a href="$1" target="_blank">$2<img src="img/link.png" height="12px" width="12px" /></a>');
