@@ -1,10 +1,10 @@
 var {header, footer, mkP, mkUL, mkGal, mkProfile} = require('./script.js');
 DIR = 'img/odsudeni/';
 
-header('index.html', 'odsúdení násilníci, fašisti, klamári', 'Kotlebovci sa tvária, že chcú Slovensko očistiť. Vo vlastných radoch však majú odsúdených násilníkov a fašistov.');
-mkProfile('kiraly', 'Jozef Király', 'obžalovaný z úkladnej vraždy',
+header('index.html', 'Odsúdení násilníci, fašisti, klamári', 'Kotlebovci sa tvária, že chcú Slovensko očistiť. Vo vlastných radoch však majú odsúdených násilníkov a fašistov.');
+mkProfile('kiraly', 'Jozef Király', 'odsúdený na 23 rokov za úkladnú vraždu',
     [ mkUL(
-      [ 'Na svojom dvore mal dobodať muža a prinútiť manželku, aby mu pomohla odstrániť telo [https://bit.ly/31YSX1G] [https://bit.ly/2NGH5cI] [https://bit.ly/2rQbuxH] [https://bit.ly/2RuT28P] [https://bit.ly/2rRcIca]'
+      [ 'Na svojom dvore mal dobodať muža a prinútiť manželku, aby mu pomohla odstrániť telo [https://bit.ly/3ocmxdj] [https://bit.ly/3koDC1] [https://bit.ly/31YSX1G] [https://bit.ly/2NGH5cI] [https://bit.ly/2rQbuxH] [https://bit.ly/2RuT28P] [https://bit.ly/2rRcIca]'
       , 'V apríli 2019 sa pobil kvôli nálepke [https://bit.ly/2Pcy3EH]'
       , 'Király je bývalý okresný predseda ĽSNS (Poprad), po obvinení mu pozastavili členstvo'
       ])
