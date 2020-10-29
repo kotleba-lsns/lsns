@@ -5,12 +5,12 @@ header('fasisti.html', 'Čo má ĽSNS s fašizmom?', 'Ľudovo sa pojmami „faš
 
 mkItm('Hajlovanie, hakenkrajce, neonacistická symbolika', 
     [ mkUL(
-      [ 'Rastislav Jakubík (krajský predseda) a Rastislav Rogel (kand. č. 44), mali vytetovaný hákový kríž (viď. fotky; Jakubík to priznal, Kotleba to naďalej popiera)'
+      [ '[index.html#Rastislav_Jakubik Rastislav Jakubík] (krajský predseda) a [index.html#Rastislav_Rogel Rastislav Rogel] (kand. č. 44), mali vytetovaný hákový kríž (viď. fotky; Jakubík to priznal, Kotleba to naďalej popiera)'
       , 'Zdenko Ľaudár (kand. č. 82) mal vytetovaný vstup do Auschwitzu'
-      , 'Ondrej Ďurica hajloval počas koncertu svojej neonacistickej skupiny Biely Odpor'
+      , '[index.html#Ondrej_Durica Ondrej Ďurica] hajloval počas koncertu svojej neonacistickej skupiny Biely Odpor'
       , 'Tomáš Rosiar (kand. č. 34) si tiež rád zahajluje'
       , 'Ivan Pavlisko (kand. č. 92) bol odsúdený za hajlovanie (vinu priznal a dostal iba pokutu 200eur) [https://bit.ly/2DDhAI7] [https://otvorenesudy.sk/decrees/1468654?l=sk]'
-      , 'Marek Kotleba predával oblečenie s neonacistickou symbolikou'
+      , '[index.html#Marek_Kotleba Marek Kotleba] predával oblečenie s neonacistickou symbolikou'
       , 'akcie pri nákupoch nad 8818 alebo 1488 korún, zľavy 8.8% (náhoda?)'
       , 'šeky 1488eur (náhoda?)'
       , 'podľa Zuzany Garelovej (kand. č. 85) je 88 „feng šuej dobré číslo“ a „absolútne dobro“'
@@ -33,9 +33,9 @@ mkItm('Hajlovanie, hakenkrajce, neonacistická symbolika',
     ])
 mkItm('Popieranie a zľahčovanie holokaustu',
     [ mkUL(
-      [ 'Mazurek napísal na Facebook, že holokaust sú len „lži a rozprávky o 6 miliónoch a mydlách z Židov“ &ndash; podľa Uhríka má právo na svoj názor.'
-      , 'Rastislav Rogel (kand. č. 44), líder skupín Krátky proces a Juden Mord („Vraždenie Židov“), v „piesni“ Švindelkaust spieva „klamú dnes a klamú stále ... koľkých sme vás upálili, milión či šesť, ... Žid vládne svetu, klameš zas ty pes, skončíš v peci tiež“.'
-      , 'Podľa Mariána Magáta (kand. č. 88) je holokaust „rozprávka“, „švindelkaust“.'
+      [ '[index.html#Milan_Mazurek Mazurek] napísal na Facebook, že holokaust sú len „lži a rozprávky o 6 miliónoch a mydlách z Židov“ &ndash; podľa Uhríka má právo na svoj názor.'
+      , '[index.html#Rastislav_Rogel Rastislav Rogel] (kand. č. 44), líder skupín Krátky proces a Juden Mord („Vraždenie Židov“), v „piesni“ Švindelkaust spieva „klamú dnes a klamú stále ... koľkých sme vás upálili, milión či šesť, ... Žid vládne svetu, klameš zas ty pes, skončíš v peci tiež“.'
+      , 'Podľa [index.html#Marian_Magat Mariána Magáta] (kand. č. 88) je holokaust „rozprávka“, „švindelkaust“.'
       , 'Blažena Ištoková (Kotlebova svokra, kand. č. 55) zdieľa článok „6 miliónové klamstvo o holokauste“.'
       , 'Štefan Jurík (kand. č. 69) tvrdí, že „[v Osvienčime] plynové komory nikdy neboli“ a že je to „silné divadlo za veľa peňazí“ (v skutočnosti sú v Auschwitzi dodnes viditeľné zvyšky plynových komôr a kremačných jám pre pece; v Auschwitzi bolo zavraždených asi 1.1 milióna ľudí). [https://sk.wikipedia.org/wiki/Koncentra%C4%8Dn%C3%BD_t%C3%A1bor_Auschwitz-Birkenau]'
 
@@ -53,8 +53,8 @@ mkItm('Popieranie a zľahčovanie holokaustu',
     ])
 mkItm('Velebenie Hitlera',
     [ mkUL(
-      [ 'Podľa Mariána Magáta bol Hitler „mierotvorca“ a „človek so srdcom na správnom mieste“, „úžasný človek“.'
-      , 'Podľa Mazureka bol Hitler tiež úžasný človek &ndash; vraj „bol skromný, nevlastnil takmer nič“ (totálny bullshit, viď [https://en.wikipedia.org/wiki/Adolf_Hitler%27s_wealth_and_income]); vraj „neexistovali bezdomovci“ (áno, podľa zákona bezdomovcov posielali do koncetračných táborov [https://en.wikipedia.org/wiki/Homelessness_in_Germany] [https://en.wikipedia.org/wiki/Black_triangle_(badge)])'
+      [ 'Podľa [index.html#Marian_Magat Mariána Magáta] bol Hitler „mierotvorca“ a „človek so srdcom na správnom mieste“, „úžasný človek“.'
+      , 'Podľa [index.html#Milan_Mazurek Mazureka] bol Hitler tiež úžasný človek &ndash; vraj „bol skromný, nevlastnil takmer nič“ (totálny bullshit, viď [https://en.wikipedia.org/wiki/Adolf_Hitler%27s_wealth_and_income]); vraj „neexistovali bezdomovci“ (áno, podľa zákona bezdomovcov posielali do koncetračných táborov [https://en.wikipedia.org/wiki/Homelessness_in_Germany] [https://en.wikipedia.org/wiki/Black_triangle_(badge)])'
       , 'Zdeněk Hošek (okresný predseda ĽSNS): „to, že [Hitler] postavil nemeckú ekonomiku na nohy predsa nie je nič zlé a to, že vraždil židov a bolševikov malo svoj význam“ [https://bit.ly/3kdudKd]'
       , 'Michaela Sahul (kand. č. 72) oceňuje, že Hitler chránil zvieratá &ndash; to, že chcel vyvraždiť Židov, Rómov, Slovanov a iné „menejcenné rasy“ je len detail [https://bit.ly/2PF6Lrv]'
       ])
@@ -71,7 +71,7 @@ mkItm('Velebenie Tisa, hanobenie SNP',
       , 'Podľa Mišúna (kand. č. 87) je Tisov výrok „Slovák, zhoď, zbav sa svojho škodcu“ nadčasový.'
       , 'Podpredseda Uhrík sa k deportáciam Židov nevie vyjadriť - nie je historik.'
       , 'Kotlebovci sa pravidelne stretávajú pri Tisovom hrobe, oslavujú výročie založenia Slovenského štátu.'
-      , 'Zdravia sa „Na stráž“ - napr. Kotleba na 70. výročí slovenského štátu, za čo ho následne zatkla polícia; Anton Grňo za nastrážovanie v budove Najvyššieho súdu dostal pokutu 5000eur.'
+      , 'Zdravia sa „Na stráž“ - napr. [index.html#Marian_Kotleba Kotleba] na 70. výročí slovenského štátu, za čo ho následne zatkla polícia; [index.html#Anton_Grno Anton Grňo] za nastrážovanie v budove Najvyššieho súdu dostal pokutu 5000eur.'
       , 'Usporadúvali fakľové pochody v gardistických uniformách.'
       , 'SNP bol podľa Kotlebu bolševický puč'
       , 'Na výročie SNP Kotleba vyvesil čiernu vlajku.'
@@ -93,8 +93,8 @@ mkItm('Antisemitizmus a rasizmus',
       , 'Rastislav Čech (kand. č. 96): „nič len Judenmord soll unsere Endesieg sein..“ (v preklade „nič len vyvraždenie židov bude našim konečným víťazstvom“); o Rómoch zase povedal: „pobiť ich ako prašivých psov...“'
       , 'Podľa Františka Lipku (kand. č. 105) „jediné dávky na ktoré majú c*gani nárok“ je ostrá munícia'
       , 'Marián Mišún zase na stránkach Pospolitosti publikuje články ako „Konečné riešenie slovenského cigánskeho problému!“, či „Stratégia pre riešenie c*gánskeho problému“ kde okrem iného navrhuje eugenický program a nútenú sterilizáciu „mentálne retardovaných, duševne chorých, psychopatov a kriminálnych recidivistov“; „Keďže doterajší pseudohumanistický  prístup voči C*gánom absolútne zlyhal ... musíme uplatňovať princípy zamedzujúce nadmernému rozmnožovaniu spoločensky nepoužiteľných jedincov ...“ [https://bit.ly/31q0NzR] [https://bit.ly/33vSqp6]'
-      , 'Mizík, ktorý „nevie používať počítač“ sa preslávil svojím statusom o tom, ako prezident degraduje vyznamenania tým, že ich udeľuje „židom“, či „ochrancom c*gánov“'
-      , 'Mazurek v Rádiu Frontinus...'
+      , '[index.html#Stanislav_Mizik Mizík], ktorý „nevie používať počítač“ sa preslávil svojím statusom o tom, ako prezident degraduje vyznamenania tým, že ich udeľuje „židom“, či „ochrancom c*gánov“'
+      , '[index.html#Milan_Mazurek Mazurek] v Rádiu Frontinus...'
       , '„Židom, ktorí len z milosti slovenského národa žijú na našom území, až bytostne vadí všetko, čo je slovenské, národné a kresťanské (...) Aj v minulosti pôsobili proti slovenskému národu, jeho štátnosti a kresťanským tradíciám, a to veľmi často v pevnom spojenectve s maďarskými šovinistami a domácimi zradcami.“ - povedal sám vodca Kotleba v Komárne (2005)'
       ])
     , mkGal(

@@ -22,7 +22,7 @@ function mkTitle(n, f) {
     '<h4><a href="#' + idFromStr(n) + '" id="' + idFromStr(n) + '">' + n + (f !== '' ? ' &ndash; '+f : '') + '</a></h4></div>';
 }
 function linkify(s) {
-    return s.replace(/\[(https?:\/\/[^ \]]*)( [^\]]*)?\]/gim, '<a href="$1" target="_blank">$2<img src="img/link.png" height="12px" width="12px" /></a>');
+    return s.replace(/\[([^ \]]*)( [^\]]*)?\]/gim, '<a href="$1" target="_blank">$2<img src="img/link.png" height="12px" width="12px" /></a>');
 }
 function mkTit(t) { return '<h2>'+t+'</h2>'; }
 function addSec(bc, its, c="section") {

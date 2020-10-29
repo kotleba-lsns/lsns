@@ -48,7 +48,7 @@ mkItm('MUDr. Grausová a svetová vojna',
 mkItm('Alternatívni národovci idú na alternatívny Kriváň',
     [ mkP('Kotlebovci sa tvária ako veľkí vlastnenci, ktorí sú hrdí na Slovenské tradície. A keďže štúrovci v 1841 vyšli na Kriváň, kotlebovci si to pripomenuli tak, že v 2017 vyšli na úplne iný Kriváň. ' +
             'Ten prvý je vo Vysokých Tatrách [https://bit.ly/38ECt0J] [https://bit.ly/3gtj1Xo], 10. najvyšší vrch na Slovensku, s tradíciou národných výstupov. Ten druhý je v Malej Fatre, je o 786m nižší a dá sa k nemu vyjsť lanovkou. ' +
-            'Výstupu sa zúčastnil aj poslanec Medvecký odsúdený za ublíženie na zdraví.')
+            'Výstupu sa zúčastnil aj poslanec [index.html#Andrej_Medvecky Medvecký] odsúdený za ublíženie na zdraví.')
     , mkGal(
         [ ['krivan.webp', '„24.6.2017 sme sa zúčastnili výstupu na najvyšší vrch pohoria Malej Fatry - Veľký Kriváň. S myšlienkou organizovať národné výstupy na Kriváň prišiel spisovateľ a vydavateľ Gašpar Fejérpataky-Belopotocký.“ píšu hrdí vlastenci...' ]
         , ['krivan2.webp', '...lenže Veľký Kriváň a Kriváň nie je to isté. A tak sú naši alternatívni vlastenci len na smiech.']
@@ -70,7 +70,7 @@ mkItm('Kde zoberie štát peniaze? &ndash; Nebudeme platiť odvody do EÚ.',
     ])
 
 mkItm('Je Tiso fašista?',
-    [ mkP('Lívia Garčalová z Kulturblogu, ale aj kandidát ĽSNS Anton Čulen obhajovali Tisa knihou historika Jakuba Drábika, Fašizmus, a jeho názorom, že Tiso nie je fašista a ani Ľudácka slovenská republika nenapĺňa ' +
+    [ mkP('Lívia Garčalová z [weby.html#Kulturblog Kulturblogu], ale aj kandidát ĽSNS Anton Čulen obhajovali Tisa knihou historika Jakuba Drábika, Fašizmus, a jeho názorom, že Tiso nie je fašista a ani Ľudácka slovenská republika nenapĺňa ' +
             '(všetky) definičné znaky fašizmu. Strelili si do nohy.')
     , mkP('Je to smiešne a zrejme jeho knihu nečítali. ' +
             'Podľa Drábika je totiž strana Kotleba-ĽSNS jednoznačne fašistická a vojnový Slovenský štát bola <b>diktatúra s prvkami fašizmu</b>, zločinecký a kolaborantský štát, ktorý mal na svedomí desiatky tisíc nevinných obetí. ' +
