@@ -8,7 +8,12 @@ mkItm('Seňor Nanočip',
             'Podľa neho ľuďom spolu s vakcínou na COVID 19 (ak raz takú vyvinú) do tela vstreknú nanočip, ktorým budú ľudí ovládať (nanočipy na ovládanie ľudí neexistujú). '),
         mkP('Navyše tvrdí, že sa to jasne píše v Zjavení Jána. Samozrejme, že v Biblii sa nepíše nič o vakcínach ani nanočipoch a už vôbec nie jasne. ' +
             'A keď už vocca argumentuje pasážou o "znaku šelmy, ktorá vychádza z mora a má sedem hláv a desať rohov" &ndash; a že to má byť ten nanočip, na mieste je otázka: čo fetuje?')
-    , mkGal([['https://www.youtube.com/watch?v=oVMcidbk8VI', 'nanocip1.webp'], ['https://www.youtube.com/watch?v=YOiQV_D_eHE&t=8m54s', 'nanocip2.webp']])
+    , mkGal(
+        [ ['https://www.youtube.com/watch?v=oVMcidbk8VI', 'nanocip1.webp']
+        , ['https://www.youtube.com/watch?v=YOiQV_D_eHE&t=8m54s', 'nanocip2.webp']
+        , ['666.webp', 'Podľa Kotlebu boli na certifikátoch testovania nakreslené tri „bunky koronavírusu“ so 6-timi „tykadlami“. Vraj tam je zašifrované číslo 666. Povedal vodca, ktorý tvrdí, že čísla nie sú symboly. Mimochodom, skúste mu niekto vysvetliť, že vírus nie je bunka.']
+        , ['tapiseria.webp', 'Takto vyzerá šelma, ktorá vychádza z mora a má sedem hláv a desať rohov, podľa tapisérie z 16-teho storočia.']
+        ])
     ])
 
 mkItm('Prasloviäni',
