@@ -116,7 +116,7 @@ mkProfile('jakubik', 'Rastislav Jakubík', 'vytetovaný hákový kríž',
     , ['jak0.webp', 'Jakubík s hákovým krížom na hrudi (uprostred veľkého Železného kríža).']
     , ['jak2.webp', 'Aj na tejto fotke má Jakubík hákový kríž na hrudi (uprostred veľkého Železného kríža).']
     , ['https://www.youtube.com/watch?v=TiXCe_k-F9g', 'jak4.webp']
-    , ['https://www.youtube.com/watch?v=r-R7qWrMHvg', 'jak5.webp']
+    , ['https://www.youtube.com/watch?v=AowIrtCrowg', 'jak5.webp']
     ])
   ])
 
@@ -137,8 +137,12 @@ mkProfile('kotleba', 'Marian Kotleba', 'preverovaný pre podozrenie zo sexuálne
       , '2003-2007 vodca Slovenskej pospolitosti, strana bola rozpustená Najvyšším súdom SR'
       , 'predseda ĽSNS'
       ])
-    , mkGal([['https://www.youtube.com/watch?v=r-R7qWrMHvg', 'jak5.webp'], ['https://www.youtube.com/watch?v=TiXCe_k-F9g', 'jak4.webp'], ['https://www.youtube.com/watch?v=_QrbupuymUs', 'kot1.webp'],
-             ['https://www.youtube.com/watch?v=ClUOLEO--Fk', 'jak5.webp'], ['https://www.youtube.com/watch?v=909fiolMm6g', 'jak5.webp']])
+    , mkGal(
+      [ ['https://www.youtube.com/watch?v=AowIrtCrowg', 'jak5.webp']
+      , ['https://www.youtube.com/watch?v=TiXCe_k-F9g', 'jak4.webp']
+      , ['https://www.youtube.com/watch?v=ClUOLEO--Fk', 'jak5.webp']
+      , ['https://www.youtube.com/watch?v=909fiolMm6g', 'jak5.webp']
+      ])
     ])
    
 mkProfile('marekkotleba', 'Marek Kotleba', 'vodcov brat, ktorý „nepozná“ neonacistické symboly',
