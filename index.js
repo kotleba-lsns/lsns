@@ -154,7 +154,7 @@ mkProfile('marekkotleba', 'Marek Kotleba', 'vodcov brat, ktorý „nepozná“ n
     
 mkProfile('grno', 'Anton Grňo', 'odsúdený pre extrémizmus',
     [ mkUL(
-      [ 'trest 5000 eur za to, že verejne v budove Najvyššieho súdu pozdravom „Na Stráž“ prejavil sympatie k ideológii ľudáckeho režimu na Slovensku a k Hlinkovej garde [https://bit.ly/37zumkl]'
+      [ 'trest 5000 eur za to, že verejne v budove Najvyššieho súdu pozdravom „Na Stráž“ prejavil sympatie k ideológii ľudáckeho režimu na Slovensku a k Hlinkovej garde [https://bit.ly/3ejAUIu] [https://bit.ly/37zumkl]'
       , 'opakovane šíri nenávistné, rasistické a antisemitské príspevky na Facebooku [https://bit.ly/2GxE2jv] [https://bit.ly/2O5BcGM]'
       ])
     ])
