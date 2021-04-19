@@ -1,7 +1,7 @@
 var {header, footer, mkP, mkUL, mkGal, mkItm} = require('./script.js');
 DIR = 'img/fasisti/';
 
-header('fasisti.html', 'Čo má ĽSNS s fašizmom?', 'Ľudovo sa pojmami „fašista“ či „nácek“ označujú sympatizanti fašistickej ideológie &ndash; hajlujúci, s vytetovanými hákovými krížmi, velebiaci Hitlera, popierajúci či zľahčujúci holokaust. Presne takí sú na kandidátke ĽSNS.');
+header('fasisti.html', 'Čo má ĽSNS/hnutie Republika s fašizmom?', 'Ľudovo sa pojmami „fašista“ či „nácek“ označujú sympatizanti fašistickej ideológie &ndash; hajlujúci, s vytetovanými hákovými krížmi, velebiaci Hitlera, popierajúci či zľahčujúci holokaust. Presne takí sú na kandidátke ĽSNS.');
 
 mkItm('Hajlovanie, hakenkrajce, neonacistická symbolika', 
     [ mkUL(

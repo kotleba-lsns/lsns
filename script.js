@@ -80,10 +80,10 @@ console.log(`
   gtag('config', 'UA-154912636-1');
 </script>
 
-  <title>Výkvet ĽSNS - ` + title + `</title>
+  <title>Výkvet ĽSNS/Republika - ` + title + `</title>
   <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
   <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
-  <meta property="og:title" content="Výkvet ĽSNS - `+title+`" />
+  <meta property="og:title" content="Výkvet ĽSNS/Republika - `+title+`" />
   <meta property="og:image" content="https://kotleba-lsns.github.io/lsns/img/logo.png" />
   <meta property="og:locale" content="sk_SK" />
   <meta name="description" content="` + descr + `" />
