@@ -130,12 +130,12 @@ mkProfile('durica', 'Ondrej Ďurica', 'hajlujúci hovorca',
     , mkGal([['https://www.youtube.com/watch?v=ClUOLEO--Fk', 'jak5.webp'], ['https://www.youtube.com/watch?v=n8mIvmGYQts', 'dur1.webp']])
     ])
   
-mkProfile('kotleba', 'Marian Kotleba', 'preverovaný pre podozrenie zo sexuálneho zneužívania',
+mkProfile('kotleba', 'Marian Kotleba', 'neprávoplatne odsúdený za založenie, podporu a propagáciu hnutia smerujúceho k potlačeniu základných práv a slobôd',
     [ mkUL(
-      [ 'preverovaný pre podozrenie zo sexuálneho zneužívania [https://bit.ly/2rhZjKb]'
-      , 'obžalovaný z prejavu sympatií k hnutiu smerujúcemu k potlačeniu práv a slobôd za použitie šekov v hodnote 1488 eur [https://bit.ly/2VuSX5V] [https://bit.ly/31u3qTc]'
-      , '2003-2007 vodca Slovenskej pospolitosti, strana bola rozpustená Najvyšším súdom SR'
-      , 'predseda ĽSNS'
+      [ 'preverovaný pre podozrenie zo sexuálneho zneužívania (vec bola odmietnutá) [https://dennikn.sk/minuta/1719938/] [https://bit.ly/2rhZjKb]'
+      , 'odsúdený (zatiaľ neprávoplatne) na 4 roky a 4 mesiace za založenie, podporu a propagáciu hnutia smerujúceho k potlačeniu základných práv a slobôd (kauza <a href="seky.html">šekov na 1488 eur</a>) [https://bit.ly/2QkeWx3] [https://bit.ly/2VuSX5V] [https://bit.ly/31u3qTc]'
+      , '2003-2007 vodca Slovenskej pospolitosti, táto strana bola rozpustená Najvyšším súdom SR'
+      , 'predseda ĽSNS, "vocca"'
       ])
     , mkGal(
       [ ['https://www.youtube.com/watch?v=AowIrtCrowg', 'jak5.webp']
