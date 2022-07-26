@@ -130,7 +130,7 @@ mkProfile('durica', 'Ondrej Ďurica', 'hajlujúci hovorca',
     , mkGal([['https://www.youtube.com/watch?v=ClUOLEO--Fk', 'jak5.webp'], ['https://www.youtube.com/watch?v=n8mIvmGYQts', 'dur1.webp']])
     ])
   
-mkProfile('kotleba', 'Marian Kotleba', 'neprávoplatne odsúdený za založenie, podporu a propagáciu hnutia smerujúceho k potlačeniu základných práv a slobôd',
+mkProfile('kotleba', 'Marian Kotleba', 'odsúdený za prejav sympatie k fašizmu (6 mesiacov s podm. odkladom na 18 mesiacov)',
     [ mkUL(
       [ 'preverovaný pre podozrenie zo sexuálneho zneužívania (vec bola odmietnutá) [https://dennikn.sk/minuta/1719938/] [https://bit.ly/2rhZjKb]'
       , 'odsúdený (zatiaľ neprávoplatne) na 4 roky a 4 mesiace za založenie, podporu a propagáciu hnutia smerujúceho k potlačeniu základných práv a slobôd (kauza <a href="seky.html">šekov na 1488 eur</a>) [https://bit.ly/2QkeWx3] [https://bit.ly/2VuSX5V] [https://bit.ly/31u3qTc]'
