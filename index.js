@@ -181,4 +181,13 @@ mkProfile('cuper', 'Ján Cuper', 'ožratý šofér chránený imunitou',
     , mkGal([['https://www.youtube.com/watch?v=m5fE1dILgWs', 'cuper-vid.webp']])
     ])
 
+mkProfile('buchta', 'Michal Buchta', 'odsúdený za šírenie extrémizmu (3 roky podmienečne)',
+    [ mkUL(
+      [ 'priznal vinu - súd skončil dohodou o vine a treste'
+      , 'bývalý okresný predseda ĽSNS'
+      , 'niekdajší predseda kotlebovej mládežníckej organizácie - Ľudová mládež'
+      , 'asistent poslanca Mizíka'
+      ])
+    // , mkGal([['https://www.youtube.com/watch?v=m5fE1dILgWs', 'cuper-vid.webp']])
+    ])
 footer();
