@@ -5,7 +5,8 @@ header('fasisti.html', 'Čo má ĽSNS/hnutie Republika s fašizmom?', 'Ľudovo s
 
 mkItm('Hajlovanie, hakenkrajce, neonacistická symbolika', 
     [ mkUL(
-      [ '[index.html#Rastislav_Jakubik Rastislav Jakubík] (krajský predseda) a [index.html#Rastislav_Rogel Rastislav Rogel] (kand. č. 44), mali vytetovaný hákový kríž (viď. fotky; Jakubík to priznal, Kotleba to naďalej popiera)'
+      [ '[https://www.facebook.com/bohus.bigas Bohuš Bigas] - ochrankár Kotlebovcov, výkladná skriňa všetkých nacistických tetovačiek'
+      , '[index.html#Rastislav_Jakubik Rastislav Jakubík] (krajský predseda) a [index.html#Rastislav_Rogel Rastislav Rogel] (kand. č. 44), mali vytetovaný hákový kríž (viď. fotky; Jakubík to priznal, Kotleba to naďalej popiera)'
       , 'Zdenko Ľaudár (kand. č. 82) mal vytetovaný vstup do Auschwitzu'
       , '[index.html#Ondrej_Durica Ondrej Ďurica] hajloval počas koncertu svojej neonacistickej skupiny Biely Odpor'
       , 'Tomáš Rosiar (kand. č. 34) si tiež rád zahajluje'
@@ -16,7 +17,12 @@ mkItm('Hajlovanie, hakenkrajce, neonacistická symbolika',
       , 'podľa Zuzany Garelovej (kand. č. 85) je 88 „feng šuej dobré číslo“ a „absolútne dobro“'
       ]),
     , mkGal(
-      [ ['jak3.webp', 'Rastislav Jakubík, krajský predseda ĽSNS s hákovým krížom na hrudi']
+      [ ['bigas1.webp', 'Bohuš Bigas, ochrankár Kotlebovcov']
+      , ['bigas2.webp', 'Bohuš Bigas, ochrankár Kotlebovcov']
+      , ['bigas3.webp', 'Bohuš Bigas, ochrankár Kotlebovcov']
+      , ['bigas4.webp', 'Bohuš Bigas, ochrankár Kotlebovcov']
+      , ['bigas5.webp', 'Bohuš Bigas, ochrankár Kotlebovcov']
+      , ['jak3.webp', 'Rastislav Jakubík, krajský predseda ĽSNS s hákovým krížom na hrudi']
       , ['rog1.webp', 'Rastislav Rogel, kandidát ĽSNS č. 44 s hákovým krížom na ruke']
       , ['laudar.webp', 'Zdenko Ľaudár (kandidát č. 82) s vytetovaným vstupom do Auschwitzu']
       , ['https://www.youtube.com/watch?v=n8mIvmGYQts', 'dur1.webp']
